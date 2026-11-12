@@ -5,6 +5,27 @@
   "type": "module",
   "description": "CHIPS — веб-игра по мотивам дворовой игры «Сотки/Фишки» (кэпсы).",
   "license": "MIT",
+  "author": "KNOWER LIFE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KnowerLife/CHIPS.git"
+  },
+  "homepage": "https://github.com/KnowerLife/CHIPS#readme",
+  "bugs": {
+    "url": "https://github.com/KnowerLife/CHIPS/issues"
+  },
+  "keywords": [
+    "game",
+    "phaser",
+    "typescript",
+    "vite",
+    "sotki",
+    "pogs",
+    "caps",
+    "telegram-mini-app",
+    "multiplayer",
+    "browser-game"
+  ],
   "scripts": {
     "dev": "vite",
     "server": "node server/index.mjs",
