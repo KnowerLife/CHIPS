@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/KnowerLife/CHIPS/security/policy
+    about: Сообщите об уязвимости приватно (см. SECURITY.md)
+  - name: Deployment guide
+    url: https://github.com/KnowerLife/CHIPS/blob/main/README-DEPLOY.md
+    about: Деплой, Telegram-бот и переменные окружения
+  - name: Game design docs
+    url: https://github.com/KnowerLife/CHIPS/tree/main/design/gdd
+    about: Концепция, правила матча, экономика и мета

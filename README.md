@@ -217,12 +217,16 @@ docs/               документация и скриншоты
 
 ## Документация
 
+- [`docs/README.md`](docs/README.md) — индекс документации
 - [`design/gdd/game-concept.md`](design/gdd/game-concept.md) — концепция игры
 - [`design/gdd/core-match.md`](design/gdd/core-match.md) — правила, формулы матча и ИИ
 - [`design/gdd/economy.md`](design/gdd/economy.md) — экономика
 - [`design/gdd/meta.md`](design/gdd/meta.md) — серии, задания, кузница, рейтинг
 - [`docs/architecture/ADR-0001-web-stack.md`](docs/architecture/ADR-0001-web-stack.md) — выбор стека
 - [`README-DEPLOY.md`](README-DEPLOY.md) — деплой
+- [`CHANGELOG.md`](CHANGELOG.md) — история изменений
+- [`CONTRIBUTING.md`](CONTRIBUTING.md) — как внести вклад
+- [`SECURITY.md`](SECURITY.md) — политика безопасности
 
 ---
 
