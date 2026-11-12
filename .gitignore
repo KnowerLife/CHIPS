@@ -1,0 +1,34 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+dist-ssr/
+*.local
+
+# server runtime data (JSON store + purchased orders)
+server/data/
+
+# logs
+logs/
+*.log
+npm-debug.log*
+
+# editors / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# test / coverage
+coverage/
+
+# opencode ephemeral session state (see .opencode/docs/directory-structure.md)
+production/session-state/
+production/session-logs/
+
+# env
+.env
+.env.*
+!.env.example
+.tmp-screenshots/

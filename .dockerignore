@@ -1,0 +1,14 @@
+# Keep the build context small and reproducible.
+node_modules
+dist
+.git
+.gitignore
+.DS_Store
+coverage
+server/data
+production/session-state
+production/session-logs
+*.log
+.opencode
+design
+docs

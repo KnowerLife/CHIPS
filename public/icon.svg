@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="CHIPS">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="18%" r="90%">
+      <stop offset="0%" stop-color="#2d1870"/>
+      <stop offset="55%" stop-color="#180d3a"/>
+      <stop offset="100%" stop-color="#06031a"/>
+    </radialGradient>
+    <radialGradient id="chip" cx="38%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffe9a6"/>
+      <stop offset="55%" stop-color="#f7d774"/>
+      <stop offset="100%" stop-color="#c9932a"/>
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <circle cx="256" cy="248" r="150" fill="#7c4dff" opacity="0.35" filter="url(#glow)"/>
+  <g transform="translate(256 248)">
+    <circle r="158" fill="url(#chip)" stroke="#fff3c4" stroke-width="10"/>
+    <circle r="124" fill="none" stroke="#8a5c12" stroke-width="10" opacity="0.55"/>
+    <g fill="#8a5c12">
+      <rect x="-13" y="-158" width="26" height="30" rx="8"/>
+      <rect x="-13" y="128" width="26" height="30" rx="8"/>
+      <rect x="-158" y="-13" width="30" height="26" rx="8"/>
+      <rect x="128" y="-13" width="30" height="26" rx="8"/>
+    </g>
+    <text x="0" y="44" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+      font-size="150" font-weight="800" fill="#3a2408" letter-spacing="-6">100</text>
+  </g>
+</svg>

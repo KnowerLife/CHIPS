@@ -1,0 +1,303 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "skill": {
+      "*": "allow"
+    },
+    "tool": {
+      "*": "allow"
+    },
+    "task": {
+      "*": "allow"
+    }
+  },
+  "agent": {
+    "creative-director": {
+      "description": "Highest-level creative authority. Makes binding decisions on game vision, tone, aesthetic direction.",
+      "mode": "all",
+      "model": "opencode/big-pickle",
+      "permission": {
+        "skill": {
+          "brainstorm": "allow",
+          "design-review": "allow"
+        }
+      }
+    },
+    "technical-director": {
+      "description": "Highest-level technical authority. Makes binding decisions on architecture, tech stack, and resolves conflicts between engineering domains.",
+      "mode": "all",
+      "model": "opencode/big-pickle",
+      "permission": {
+        "skill": {
+          "code-review": "allow",
+          "tech-debt": "allow"
+        }
+      }
+    },
+    "producer": {
+      "description": "Production lead. Owns schedule, scope management, cross-department coordination, and change propagation.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "game-designer": {
+      "description": "Game design lead. Owns mechanics, systems, player progression, and difficulty balancing.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "lead-programmer": {
+      "description": "Technical lead. Owns code architecture, technical debt, code quality standards, and development velocity.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "art-director": {
+      "description": "Visual direction lead. Owns art style, visual consistency, and aesthetic quality gates.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "audio-director": {
+      "description": "Audio direction lead. Owns sound design, music direction, and audio pipeline.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "narrative-director": {
+      "description": "Narrative direction lead. Owns story, world-building, dialogue, and narrative consistency.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "qa-lead": {
+      "description": "QA lead. Owns testing strategy, bug tracking, and quality gates.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "release-manager": {
+      "description": "Release lead. Owns release planning, certification, store submission, and deployment.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "localization-lead": {
+      "description": "Localization lead. Owns translation pipeline, locale management, and text externalization.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "gameplay-programmer": {
+      "description": "Implements player-facing gameplay systems: movement, combat, abilities, inventory.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "engine-programmer": {
+      "description": "Works on core engine systems: rendering, physics, audio engine, platform abstraction.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "ai-programmer": {
+      "description": "Implements AI systems: pathfinding, behavior trees, state machines, utility AI.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "network-programmer": {
+      "description": "Implements networking: client-server architecture, sync, replication, lag compensation.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "tools-programmer": {
+      "description": "Builds editor tools, pipeline scripts, and dev utilities.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "ui-programmer": {
+      "description": "Implements UI systems: menus, HUDs, dialogs, input handling.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "systems-designer": {
+      "description": "Designs complex game systems: progression, economy, stats, loadouts.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "level-designer": {
+      "description": "Designs and builds game levels, encounters, and spatial puzzles.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "economy-designer": {
+      "description": "Designs in-game economies: currency, pricing, rewards, monetization balance.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "technical-artist": {
+      "description": "Bridges art and code: shader setup, tool creation, pipeline automation.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "sound-designer": {
+      "description": "Creates sound effects, ambient audio, and implements audio systems.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "writer": {
+      "description": "Writes dialogue, narrative content, and story elements.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "world-builder": {
+      "description": "Creates lore, geography, factions, and world-building documents.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "ux-designer": {
+      "description": "Designs user experience flows, information architecture, and usability.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "prototyper": {
+      "description": "Creates rapid prototypes to validate mechanics and ideas.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "performance-analyst": {
+      "description": "Profiles performance, identifies bottlenecks, and optimizes game execution.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "devops-engineer": {
+      "description": "Manages CI/CD, build pipelines, and deployment infrastructure.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "analytics-engineer": {
+      "description": "Implements analytics tracking, telemetry, and data pipelines.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "security-engineer": {
+      "description": "Implements security measures, anti-cheat, and secure networking.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "qa-tester": {
+      "description": "Tests features, finds bugs, and validates game quality.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "accessibility-specialist": {
+      "description": "Ensures game is accessible: color blind modes, subtitle sizing, input alternatives.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "live-ops-designer": {
+      "description": "Plans live service: events, content updates, player retention strategies.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "community-manager": {
+      "description": "Manages community relations, feedback collection, and player communication.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "godot-specialist": {
+      "description": "Godot 4 engine specialist. Leads Godot-based development.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "unity-specialist": {
+      "description": "Unity engine specialist. Leads Unity-based development.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "unreal-specialist": {
+      "description": "Unreal Engine 5 specialist. Leads UE5-based development.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "godot-gdscript-specialist": {
+      "description": "Godot GDScript expert. Implements gameplay in GDScript.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "godot-shader-specialist": {
+      "description": "Godot shader expert. Creates visual shaders in Godot.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "godot-gdextension-specialist": {
+      "description": "Godot GDExtension/C++ expert. Creates native extensions.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "unity-dots-specialist": {
+      "description": "Unity DOTS/ECS specialist. Implements data-oriented systems.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "unity-shader-specialist": {
+      "description": "Unity shader expert. Creates HLSL shaders and VFX.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "unity-addressables-specialist": {
+      "description": "Unity Addressables specialist. Manages asset loading.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "unity-ui-specialist": {
+      "description": "Unity UI Toolkit specialist. Implements UI in Unity.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "ue-gas-specialist": {
+      "description": "Unreal GAS (Gameplay Ability System) specialist.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "ue-blueprint-specialist": {
+      "description": "Unreal Blueprint specialist. Implements visual scripting.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "ue-replication-specialist": {
+      "description": "Unreal networking/replication specialist.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "ue-umg-specialist": {
+      "description": "Unreal UMG/CommonUI specialist. Implements UI in UE.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "gamemaker-specialist": {
+      "description": "GameMaker Studio 2 engine specialist. Authority on GML architecture, object/event design, project structure, and GMS2 best practices.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "gamemaker-gml-specialist": {
+      "description": "GML language specialist. Hands-on authority for writing, reviewing, and refactoring GML code: language features, style, patterns, memory management, and the full GML API surface.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "gamemaker-performance-specialist": {
+      "description": "GMS2 performance specialist. Owns draw call batching, instance deactivation, texture pages, spatial partitioning, and per-platform profiling.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "gamemaker-shader-specialist": {
+      "description": "GMS2 shader specialist. Owns GLSL ES shaders, surface-based post-processing, shader uniforms, and visual effect optimization.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "gamemaker-assets-specialist": {
+      "description": "GMS2 assets specialist. Owns texture groups, texture page packing, audio groups, sprite import settings, and VRAM budgets.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "gamemaker-ui-specialist": {
+      "description": "GMS2 UI specialist. Owns Draw GUI event layer, HUD systems, menu screen stacks, sequences for UI animation, and cross-platform input handling.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    },
+    "gamemaker-networking-specialist": {
+      "description": "GMS2 networking specialist. Owns socket architecture, buffer design, UDP/TCP packets, Async Networking event, rollback/lockstep netcode, and Steam SDR integration.",
+      "mode": "all",
+      "model": "opencode/big-pickle"
+    }
+  }
+}

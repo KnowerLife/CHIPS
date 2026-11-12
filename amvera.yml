@@ -1,0 +1,23 @@
+# Amvera deployment config for CHIPS (https://amvera.ru).
+#
+# Amvera builds the Dockerfile, runs the container, terminates HTTPS for you and
+# can give the app a free *.amvera.io domain. Mounted persistence is mapped to
+# /data so the JSON store (accounts / orders) survives restarts.
+#
+# Set the environment variables (BOT_TOKEN, BOT_USERNAME, WEBAPP_URL, PUBLIC_URL)
+# in the Amvera project settings — see README-DEPLOY.md.
+
+meta:
+  environment: docker
+  toolchain:
+    name: docker
+    version: latest
+
+build:
+  dockerfile: Dockerfile
+  skip: false
+
+run:
+  persistenceMount: /data
+  containerPort: 8787
+  command: node server/index.mjs

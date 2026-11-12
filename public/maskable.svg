@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="CHIPS">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="18%" r="90%">
+      <stop offset="0%" stop-color="#2d1870"/>
+      <stop offset="55%" stop-color="#180d3a"/>
+      <stop offset="100%" stop-color="#06031a"/>
+    </radialGradient>
+    <radialGradient id="chip" cx="38%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffe9a6"/>
+      <stop offset="55%" stop-color="#f7d774"/>
+      <stop offset="100%" stop-color="#c9932a"/>
+    </radialGradient>
+  </defs>
+  <!-- Full-bleed background: the OS masks this icon to any shape. -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <!-- Art stays inside the central safe zone (80% of the canvas). -->
+  <g transform="translate(256 256)">
+    <circle r="122" fill="url(#chip)" stroke="#fff3c4" stroke-width="8"/>
+    <circle r="96" fill="none" stroke="#8a5c12" stroke-width="8" opacity="0.55"/>
+    <text x="0" y="34" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+      font-size="116" font-weight="800" fill="#3a2408" letter-spacing="-5">100</text>
+  </g>
+</svg>
